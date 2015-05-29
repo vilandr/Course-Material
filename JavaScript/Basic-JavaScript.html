@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+
+    	<script>
+
+    		var a = "";
+    		var b = true;
+    		var c = 0;
+    		var d;
+
+    		whatIsTheType(a);
+    		whatIsTheType(b);
+    		whatIsTheType(c);
+    		whatIsTheType(d);
+
+    		console.log(returnSomething());
+
+    		function doSomething() {
+    			var x = 5;
+    			var y = 5;
+    			var y = y + x;
+    			console.log("The sum is: " + y);
+    		}
+
+    		function returnSomething(){
+
+    			return "99";
+    		}
+
+    		function whatIsTheType(arg1){
+
+    			if(typeof(arg1) == "number")
+    				console.log("Argument is a number");
+    			else if(typeof(arg1) == "string")
+    				console.log("Argument is a string");
+    			else if(typeof(arg1) == "boolean")
+    				console.log("Argument is a boolean");
+    			else if(typeof(arg1) == "undefined")
+    				console.log("Argument is null");
+    			else
+    				console.log("Not sure :(");
+    		}
+
+    	</script>
+	</head>
+	<body>
+		<script>
+			document.write("<p>Hello World!</p>");
+		</script>
+	</body>
+</html>
